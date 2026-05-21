@@ -7,7 +7,7 @@
       "id": "YOUR_DISCORD_ID"
     }
   ],
-  "main": "src/index.ts",
+  "main": "src/index.js",
   "vendetta": {
     "icon": "ic_heart"
   }
