@@ -1,0 +1,14 @@
+{
+  "name": "❤️ Double Tap React",
+  "description": "Double tap a message to react with a heart ❤️",
+  "authors": [
+    {
+      "name": "YourName",
+      "id": "YOUR_DISCORD_ID"
+    }
+  ],
+  "main": "src/index.ts",
+  "vendetta": {
+    "icon": "ic_heart"
+  }
+}
