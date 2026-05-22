@@ -10,5 +10,6 @@
   "main": "index.js",
   "vendetta": {
     "icon": "ic_heart"
-  }
+  },
+  "hash": "dfaf16ca573e7ff7dcb162f26cce09cf19a4705aba707d41b7626930c2fb622d"
 }
