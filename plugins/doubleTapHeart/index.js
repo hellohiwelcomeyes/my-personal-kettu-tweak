@@ -72,8 +72,6 @@ export default {
         lastTap[message.id] = now;
       })
     );
-
-    showToast("Double Tap React loaded");
   },
 
   onUnload() {
