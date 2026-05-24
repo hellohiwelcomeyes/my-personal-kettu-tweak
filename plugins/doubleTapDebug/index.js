@@ -2,11 +2,6 @@
   var patches = [];
   var lastTap = {};
 
-  var ReactAPI = vendetta.metro.findByProps("addReaction", "removeReaction");
-  if (!ReactAPI) {
-    vendetta.ui.toasts.showToast("Double Tap React: Could not find reaction API");
-  }
-
   function tryFindTarget() {
     var checks = [
       function() { return vendetta.metro.findByProps("onPress", "onLongPress"); },
@@ -51,7 +46,11 @@
 
   var C = {
     onLoad: function() {
-      if (!ReactAPI) return;
+      var ReactAPI = vendetta.metro.findByProps("addReaction", "removeReaction");
+      if (!ReactAPI) {
+        vendetta.ui.toasts.showToast("Double Tap React: Could not find reaction API");
+        return;
+      }
 
       var target = tryFindTarget();
       if (!target) {
@@ -72,7 +71,6 @@
       });
 
       patches.push(unpatch);
-      vendetta.ui.toasts.showToast("Double Tap React loaded");
     },
 
     onUnload: function() {
